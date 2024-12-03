@@ -1,0 +1,27 @@
+.order-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Sayfayı kaplasın */
+  background-color: #ff4d4d; /* Kırmızı arka plan */
+  color: white; /* Beyaz metin */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.order-success h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.order-success h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.order-success p {
+  font-size: 1.5rem;
+}

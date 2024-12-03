@@ -1,21 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import workintech from "/workintech.svg";
 import "./App.css";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import Home from "./companents/Home.jsx";
+import Order from "./companents/Order.jsx";
+import Success from "./companents/Success.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Switch>
-        <Route exact patch="/"></Route>
-        <Route patch="/Home"></Route>
-        <Route patch="/Order"></Route>
-        <Route patch="/Success"></Route>
-      </Switch>
-    </>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/order">
+        <Order />
+      </Route>
+      <Route path="/success">
+        <Success />
+      </Route>
+    </Switch>
   );
 }
 
