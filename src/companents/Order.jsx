@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "./Header";
 
 const PizzaForm = ({ onUpdate }) => {
   const [size, setSize] = useState("Küçük");
@@ -19,7 +18,6 @@ const PizzaForm = ({ onUpdate }) => {
     "Jalapeno",
     "Sarımsak",
     "Biber",
-    "Sucuk",
     "Ananas",
     "Kabak",
   ];
@@ -41,7 +39,7 @@ const PizzaForm = ({ onUpdate }) => {
   return (
     <form onSubmit={handleSubmit} className="pizza-form">
       <fieldset>
-        <legend>Boyut Seç</legend>
+        <div>Boyut Seç</div>
         {["Küçük", "Orta", "Büyük"].map((option) => (
           <label key={option}>
             <input
@@ -57,7 +55,7 @@ const PizzaForm = ({ onUpdate }) => {
       </fieldset>
 
       <fieldset>
-        <legend>Hamur Seç</legend>
+        <div>Hamur Seç</div>
         <select value={crust} onChange={(e) => setCrust(e.target.value)}>
           <option value="Hamur Kalınlığı">Hamur Kalınlığı</option>
           <option value="İnce">İnce</option>
@@ -66,7 +64,7 @@ const PizzaForm = ({ onUpdate }) => {
       </fieldset>
 
       <fieldset>
-        <legend>Ek Malzemeler</legend>
+        <div>Ek Malzemeler</div>
         {extraOptions.map((option) => (
           <label key={option}>
             <input

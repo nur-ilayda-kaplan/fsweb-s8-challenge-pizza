@@ -1,26 +1,26 @@
 .success-container {
-  height: 100vh; /* Görünümün tamamını kaplar (vertical height) */
-  width: 100vw; /* Görünümün tamamını kaplar (horizontal width) */
-  display: flex; /* İçeriği esnek düzenle yerleştirir */
-  flex-direction: column; /* İçerikleri dikey hizalar */
-  justify-content: center; /* İçerikleri dikeyde ortalar */
-  align-items: center; /* İçerikleri yatayda ortalar */
-  background-color: #ce2829; /* Arka plan rengini kırmızı yapar */
-  color: white; /* Yazı rengini beyaz yapar */
-  text-align: center; /* Metni ortalar */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ce2829;
+  color: #faf7f2;
+  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
 }
 
 .success-logo {
-  max-width: 100rem; /* Görüntü için maksimum genişlik */
-  margin-bottom: 100px; /* Görüntü ile metin arasında boşluk */
+  max-width: 100rem;
+  margin-bottom: 100px;
 }
 
 .success-container h2 {
-  font-size: 4rem; /* Başlık boyutu */
-  margin: 10px 0; /* Başlık çevresindeki boşluk */
+  font-size: 4rem;
+  margin: 10px 0;
   font-family: "Roboto Condensed", serif;
   font-optical-sizing: auto;
   font-weight: 300;
