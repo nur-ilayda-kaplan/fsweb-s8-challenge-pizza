@@ -6,9 +6,12 @@
 }
 
 .hero-image {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  background-size: cover;
 }
 
 .content {
@@ -18,19 +21,35 @@
   transform: translate(-50%, -50%);
   color: #faf7f2;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+  position: fixed;
+  top: 15rem;
 }
 
 .img-logo {
-  padding-top: 7rem;
+  display: flex;
+  margin: 0%;
+  padding-top: 1rem;
 }
 
-.content h2 {
+.content h1 {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
   font-family: "Roboto Condensed", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+.content h2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44.27px;
+  font-style: italic;
+  color: #fdc913;
 }
 
 .cta-button {

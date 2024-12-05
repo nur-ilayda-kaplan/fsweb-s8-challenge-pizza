@@ -1,12 +1,21 @@
 import React from "react";
+import "./Success.css";
 
-function Success() {
-  return;
-  <div className="order-success">
-    <h1>Teknolojik Yemekler</h1>
-    <h2>TEBRİKLER!</h2>
-    <p>SİPARİŞİNİZ ALINDI!</p>
-  </div>;
-}
+const Success = () => {
+  return (
+    <div className="success-container">
+      <img
+        className="success-logo"
+        src="./Assets/Iteration-1-assets/logo.svg"
+      />
+
+      <h2>
+        TEBRİKLER!
+        <br />
+        SİPARİŞİNİZ ALINDI!
+      </h2>
+    </div>
+  );
+};
 
 export default Success;

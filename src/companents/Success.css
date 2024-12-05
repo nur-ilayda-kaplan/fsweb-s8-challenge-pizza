@@ -1,27 +1,28 @@
-.order-success {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Sayfayı kaplasın */
-  background-color: #ff4d4d; /* Kırmızı arka plan */
-  color: white; /* Beyaz metin */
-  text-align: center;
-  font-family: Arial, sans-serif;
+.success-container {
+  height: 100vh; /* Görünümün tamamını kaplar (vertical height) */
+  width: 100vw; /* Görünümün tamamını kaplar (horizontal width) */
+  display: flex; /* İçeriği esnek düzenle yerleştirir */
+  flex-direction: column; /* İçerikleri dikey hizalar */
+  justify-content: center; /* İçerikleri dikeyde ortalar */
+  align-items: center; /* İçerikleri yatayda ortalar */
+  background-color: #ce2829; /* Arka plan rengini kırmızı yapar */
+  color: white; /* Yazı rengini beyaz yapar */
+  text-align: center; /* Metni ortalar */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.order-success h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-weight: bold;
+.success-logo {
+  max-width: 100rem; /* Görüntü için maksimum genişlik */
+  margin-bottom: 100px; /* Görüntü ile metin arasında boşluk */
 }
 
-.order-success h2 {
-  font-size: 3rem;
-  margin: 20px 0;
-  font-weight: bold;
-}
-
-.order-success p {
-  font-size: 1.5rem;
+.success-container h2 {
+  font-size: 4rem; /* Başlık boyutu */
+  margin: 10px 0; /* Başlık çevresindeki boşluk */
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
