@@ -1,0 +1,323 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ce2829;
+  margin-bottom: 15rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bannerpizza {
+  position: absolute;
+  z-index: -1;
+  margin-top: 5rem;
+}
+
+.title {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  width: 38rem;
+  margin-bottom: 2rem;
+  display: flex;
+  color: green;
+}
+
+.navlink {
+  color: green;
+  text-decoration: none;
+}
+
+.pizzaform {
+  width: 32%;
+  margin: 0 auto;
+  height: 90rem;
+  margin-bottom: 10rem;
+}
+
+.labelPizza {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.costAreaContanier {
+  display: flex;
+  gap: 9.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.costPizzaLabel {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 7rem;
+}
+
+.orderform-body {
+  background-image: none;
+}
+
+.pizzadescription {
+  margin-bottom: 2rem;
+  color: #5f5f5f;
+}
+
+.pizzadescriptionlabel {
+  line-height: 1.75rem;
+}
+
+.selectcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.selectPizzaSize {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.pizzasizeinput {
+  position: absolute;
+  top: 0;
+  left: 1;
+  right: 1;
+  height: 60px;
+  width: 60px;
+  background-color: #faf7f2;
+  border-radius: 50%;
+}
+
+.sizeArea {
+  width: 80%;
+}
+
+.allradiobuttons {
+  display: block;
+  position: relative;
+  margin-right: 4rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.allradiobuttons input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.allradiobuttons:hover input ~ .pizzasizeinput {
+  background-color: #ddd9d5;
+}
+
+/* When the radio button is checked, add a blue background */
+.allradiobuttons input:checked ~ .pizzasizeinput {
+  background-color: #feddc1;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.pizzasizeinput:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.allradiobuttons input:checked ~ .pizzasizeinput:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.selectpastry {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pastrylabel {
+  margin: 0 0 0 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.additionalingredients {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  width: 85%;
+}
+.alladditionalcheckboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1.25rem;
+}
+
+.additionalcheckbox {
+  display: block;
+  width: 32%;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checboxlabel {
+  font-weight: bold;
+  color: gray;
+  margin-left: 1rem;
+}
+
+.ordernotearea {
+  margin-bottom: 2.5rem;
+}
+
+.borderline {
+  border-bottom: 1px solid black;
+  margin-bottom: 2.5rem;
+}
+.ordernotelabel {
+  font-family: Barlow;
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.additionalcheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+  margin-right: 2rem;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  margin-right: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #faf7f2;
+  border-radius: 0.5rem;
+}
+
+.additionalcheckbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.additionalcheckbox input:checked ~ .checkmark {
+  background-color: #fdc913;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.additionalcheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.additionalcheckbox .checkmark:after {
+  left: 17px;
+  top: 12px;
+  width: 8px;
+  height: 15px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.usernamelabel {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.sumoforderarea {
+  display: flex;
+  justify-content: space-between;
+}
+.sumofordercost {
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  color: black;
+  padding: 2rem 2rem;
+}
+
+.orderquantitylabel {
+  border: 2px solid gainsboro;
+  padding: 0 1.2rem;
+  padding-top: 0.85rem;
+  padding-bottom: 1.15rem;
+}
+
+.sumorderlabel {
+  font-weight: bold;
+}
+
+.electionsarea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sumcostarea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allcostarea {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf7f2;
+}
+
+.username {
+  margin-bottom: 1rem;
+}
+
+.orderreducebutton {
+  background-color: #fdc913;
+  color: black;
+  padding: 1rem 1.25rem;
+}
+
+.activepage {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.topcolorarea {
+  background-color: #faf7f2;
+}

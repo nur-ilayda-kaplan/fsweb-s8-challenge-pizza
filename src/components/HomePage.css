@@ -1,0 +1,122 @@
+.firstcontainer {
+  position: relative;
+  width: 100%;
+}
+
+.homeinfo {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  right: 1rem;
+}
+
+.logoHomepage {
+  display: block;
+  margin: 3rem auto;
+}
+
+.homePageH1 {
+  font-family: "Roboto Condensed", serif;
+  display: flex;
+  color: white;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  justify-content: center;
+}
+
+.homePageButton {
+  display: block;
+  background-color: #fdc913;
+  color: black;
+  border-radius: 1.5rem;
+  padding: 0.75rem 3rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin: 1rem auto;
+}
+
+.homeinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OrderFoodCardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 20rem;
+  margin-right: 17rem;
+}
+
+.npmCardLabel {
+  color: #ce2829;
+}
+
+.foodmessengercardlabelcontainer {
+  margin-bottom: 2rem;
+}
+
+.hamburgercardlabelcontainer {
+  margin-bottom: 1rem;
+}
+
+.choosingfoodlabelarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7.5rem;
+}
+
+.foodproductscontainer {
+  display: flex;
+  height: 50vh;
+  margin-right: 16.5rem;
+  margin-left: 19.5rem;
+  column-gap: 1.5rem;
+}
+
+.foodCard {
+  background-color: white;
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.foodCardLabelContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.restaurantinfocontainer {
+  height: 60vh;
+  background-color: black;
+}
+
+.lowestareacontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 20rem;
+  align-items: center;
+}
+
+.fonticon {
+  color: white;
+}
+
+.orderbutton {
+  font-family: "Roboto Condensed", serif;
+  border-radius: 2rem;
+  background-color: #faf7f2;
+  color: red;
+  padding: 1rem 2rem 1rem 2rem;
+  font-weight: bold;
+  border: none;
+}
